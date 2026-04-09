@@ -76,7 +76,7 @@ body.dark-mode .main-sidebar .nav-link:hover {
          alt="AdminLTE Logo" 
          class="brand-image img-circle elevation-3" 
          style="opacity: .8">
-    <span class="brand-text font-weight-light" style="color: white">SMART BMIS</span>
+    <span class="brand-text font-weight-light" style="color: white">INVENTORY</span>
 </div>
   <div class="sidebar">
     <nav class="mt-2">
@@ -92,6 +92,15 @@ body.dark-mode .main-sidebar .nav-link:hover {
         <i class="nav-icon fas fa-history"></i>
         <p>Activity Logs</p>
       </a>
+
+      <!-- </li>
+    <li class="nav-item">
+      <a href="<?= base_url('Products') ?>" class="nav-link <?= is_active(1, 'person') ?>">
+        <i class="nav-icon fas fa-user-friends"></i>
+        <p>Products</p>
+      </a>
+    </li> -->
+
     </li>
     <li class="nav-item">
       <a href="<?= base_url('person') ?>" class="nav-link <?= is_active(1, 'person') ?>">
@@ -99,7 +108,7 @@ body.dark-mode .main-sidebar .nav-link:hover {
         <p>Person</p>
       </a>
     </li>
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <a href="<?= base_url('profiling') ?>" class="nav-link <?= is_active(1, 'profiling') ?>">
         <i class="nav-icon fas fa-users"></i>
         <p>Profiling</p>
@@ -110,13 +119,25 @@ body.dark-mode .main-sidebar .nav-link:hover {
         <i class="nav-icon fas fa-users"></i>
         <p>Student</p>
       </a>
-    </li>
+    </li> -->
      <li class="nav-item">
       <a href="<?= base_url('users') ?>" class="nav-link <?= is_active(1, 'users') ?>">
         <i class="nav-icon fas fa-user-lock"></i>
         <p>User Accounts</p>
       </a>
     </li>
+
+   <a href="<?= base_url('product') ?>" class="nav-link">
+  <i class="nav-icon fas fa-box"></i>
+  <p>Products</p>
+</a>
+
+<li class="nav-item">
+  <a href="<?= base_url('categories') ?>" class="nav-link <?= is_active(1, 'categories') ?>">
+    <i class="nav-icon fas fa-tags"></i>
+    <p>Categories</p>
+  </a>
+</li>
   </ul>
 </nav>
 </div>

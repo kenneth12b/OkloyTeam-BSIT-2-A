@@ -44,5 +44,21 @@ $routes->post('student/update', 'Student::update');
 $routes->delete('student/delete/(:num)', 'Student::delete/$1');
 $routes->post('student/fetchRecords', 'Student::fetchRecords');
 
+$routes->get('/product', 'Product::index');
+$routes->post('product/save', 'Product::save');
+$routes->get('product/edit/(:segment)', 'Product::edit/$1');
+$routes->post('product/update', 'Product::update');
+$routes->delete('product/delete/(:num)', 'Product::delete/$1');
+$routes->post('product/fetchRecords', 'Product::fetchRecords');
+$routes->get('/dashboard', 'Dashboard::index');
+
+$routes->get('categories', 'Category::index');
+$routes->post('categories/save', 'Category::save');
+$routes->get('categories/edit/(:num)', 'Category::edit/$1');
+$routes->post('categories/update', 'Category::update');
+$routes->delete('categories/delete/(:num)', 'Category::delete/$1');
+$routes->post('categories/fetchRecords', 'Category::fetchRecords');
+
+
 // Logs routes for admin
 $routes->get('/log', 'Logs::log');
