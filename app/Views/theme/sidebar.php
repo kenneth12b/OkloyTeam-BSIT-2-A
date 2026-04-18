@@ -76,7 +76,7 @@ body.dark-mode .main-sidebar .nav-link:hover {
          alt="AdminLTE Logo" 
          class="brand-image img-circle elevation-3" 
          style="opacity: .8">
-    <span class="brand-text font-weight-light" style="color: white">INVENTORY</span>
+    <span class="brand-text font-weight-light" style="color: white">K3 Billiards</span>
 </div>
   <div class="sidebar">
     <nav class="mt-2">
@@ -108,6 +108,23 @@ body.dark-mode .main-sidebar .nav-link:hover {
         <p>Person</p>
       </a>
     </li>
+</li>
+
+<li class="nav-item">
+  <a href="<?= base_url('tables') ?>" class="nav-link <?= is_active(1, 'tables') ?>">
+    <i class="nav-icon fas fa-table"></i>
+    <p>Tables</p>
+  </a>
+</li>
+
+<li class="nav-item">
+  <a href="<?= base_url('reservation') ?>" class="nav-link">
+    <i class="nav-icon fas fa-calendar-check"></i>
+    <p>Reservations</p>
+  </a>
+</li>
+
+
     <!-- <li class="nav-item">
       <a href="<?= base_url('profiling') ?>" class="nav-link <?= is_active(1, 'profiling') ?>">
         <i class="nav-icon fas fa-users"></i>
@@ -127,17 +144,42 @@ body.dark-mode .main-sidebar .nav-link:hover {
       </a>
     </li>
 
-   <a href="<?= base_url('product') ?>" class="nav-link">
+   <!-- <a href="<?= base_url('product') ?>" class="nav-link">
   <i class="nav-icon fas fa-box"></i>
   <p>Products</p>
-</a>
+</a> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="<?= base_url('categories') ?>" class="nav-link <?= is_active(1, 'categories') ?>">
     <i class="nav-icon fas fa-tags"></i>
     <p>Categories</p>
   </a>
+</li> -->
+
+<!-- <li class="nav-item">
+  <a href="<?= base_url('Ingredients') ?>" class="nav-link <?= is_active(1, 'Ingredients') ?>">
+    <i class="nav-icon fas fa-tags"></i>
+    <p>Ingredients</p>
+  </a>
+</li> -->
+<!-- <li class="nav-item">
+    <a href="<?= base_url('product') ?>" class="nav-link">
+        <i class="nav-icon fas fa-box"></i>
+        <p>Items</p>
+    </a>
+</li> -->
+<!-- 
+REPLACE THE PRODUCTS LINE WITH THIS
+<li class="nav-item">
+    <a href="<?= base_url('tables') ?>" class="nav-link <?= is_active(1, 'tables') ?>">
+        <i class="nav-icon fas fa-table-pool"></i>
+        <p>🪑 Tables</p>
+    </a>
+</li> -->
+
+  </ul>
 </li>
+
   </ul>
 </nav>
 </div>

@@ -74,7 +74,7 @@ class Filters extends BaseFilters
         'before' => [
             'inactivity' => ['except' => ['login', 'login/*', 'auth/*']], // adjust paths as needed
             'honeypot',
-            'csrf',
+            
             'invalidchars',
         ],
         'after' => [
